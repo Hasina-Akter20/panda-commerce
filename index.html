@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <title>Panda</title>
+    
     <script src="https://kit.fontawesome.com/31ddd1af86.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
@@ -18,38 +20,32 @@
 </head>
 <body> 
 <header>
-    <section>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
+    <section class="container fixed-top ">
+        <nav class="navbar navbar-expand-lg navbar-light  pt-0 mb-5">
+            <div class="container bg-light p-3 mb-3">
               <a class="navbar-brand" href="#">
                 <img src="images/logo.png" alt="" class="d-inline-block align-text-top">
-              </a>
-              
-              
+              </a>            
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <form class="d-flex w-50 ">
-                <input class="form-control  me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success rounded-pill" type="submit">Search</button>
-              </form>
+              
 
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Product</a>
+                    <a class="nav-link" href="#shoes">Shoes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#backpack">Backpake</a>
                   </li>
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About Us </a>
-                  </li>
-                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                  </li>              
+                    <a class="nav-link" href="#subscribe">Subscribe</a>
+                  </li>        
                 </ul>
                 
               </div>
@@ -57,7 +53,7 @@
           </nav>
 
     </section>
-    <section class="container ">
+    <section class="container  mt-5" id="home">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -138,7 +134,7 @@
  
  <!-- ........ section shoes...........  -->
 
-  <section class="container my-5">
+  <section class="container my-5" id="shoes">
     <h2>Shoes</h2>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
       <div class="col">
@@ -179,7 +175,7 @@
   </section>
   <!-- Backpake section  -->
 
-  <section class="container my-5">
+  <section class="container my-5" id="backpack">
     <h2>Backpake</h2>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
       <div class="col">
@@ -218,17 +214,17 @@
       
     </div>
   </section>
-  <section class="container my-5 d-flex justify-content-center align-items-center rounded-3" style="height: 400px; background-color: #FEEAE9;">
+  <section class="container my-5 d-flex justify-content-center align-items-center rounded-3" id="subscribe" style="height: 400px; background-color: #FEEAE9;">
     <div>
       <h2>LET'S STAY IN TOUCH</h2>
-    <h6>Get updates on sales, specials and more</h6>
+    <h6 style="color: gray;">Get updates on sales, specials and more</h6>
     <input type="text"  class="rounded-3 w-75 ps-2 " placeholder="Enter your gmail"><br>
     <div class="btn btn-primary m-1 rounded-3 ">Submit</div>
     </div>
   </section>
 </main>
 <footer>
-  <p class="text-center mt-5"><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
+  <p class="text-center mt-5 " ><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
 </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
